@@ -9,6 +9,11 @@ document.ready(function () {
   let punchValDom = document.querySelector('#punchVal');
   let cardBtn = document.querySelector('#cardBtn');
 
+
+  utils.createFooter('home');
+
+
+
   //swiper 初始化
   var mySwiper = new Swiper('.swiper-container', {
     // direction: 'vertical', // 垂直切换选项

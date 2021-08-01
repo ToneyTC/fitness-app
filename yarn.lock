@@ -83,9 +83,9 @@
   integrity sha1-EAHMXmo3BLg8I2An538vWOoBD0A=
 
 "@types/node@*":
-  version "16.4.4"
-  resolved "https://registry.nlark.com/@types/node/download/@types/node-16.4.4.tgz?cache=0&sync_timestamp=1627427039212&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-16.4.4.tgz#bb0744c1dcc1fc374f51d3fd41d028331a2420d4"
-  integrity sha1-uwdEwdzB/DdPUdP9QdAoMxokINQ=
+  version "16.4.5"
+  resolved "https://registry.nlark.com/@types/node/download/@types/node-16.4.5.tgz?cache=0&sync_timestamp=1627457597096&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-16.4.5.tgz#eac95d4e52775190c405f0b9061ddcfb0304f7fc"
+  integrity sha1-6sldTlJ3UZDEBfC5Bh3c+wME9/w=
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -1086,12 +1086,7 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001219:
-  version "1.0.30001247"
-  resolved "https://registry.nlark.com/caniuse-lite/download/caniuse-lite-1.0.30001247.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcaniuse-lite%2Fdownload%2Fcaniuse-lite-1.0.30001247.tgz#105be7a8fb30cdd303275e769a9dfb87d4b3577a"
-  integrity sha1-EFvnqPswzdMDJ152mp37h9SzV3o=
-
-caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
   version "1.0.30001248"
   resolved "https://registry.nlark.com/caniuse-lite/download/caniuse-lite-1.0.30001248.tgz#26ab45e340f155ea5da2920dadb76a533cb8ebce"
   integrity sha1-JqtF40DxVepdopINrbdqUzy4684=
@@ -5617,7 +5612,7 @@ webpack-merge@^5.7.3:
 
 webpack-sources@^1.1.0:
   version "1.4.3"
-  resolved "https://registry.nlark.com/webpack-sources/download/webpack-sources-1.4.3.tgz?cache=0&sync_timestamp=1627383692924&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwebpack-sources%2Fdownload%2Fwebpack-sources-1.4.3.tgz#eedd8ec0b928fbf1cbfe994e22d2d890f330a933"
+  resolved "https://registry.nlark.com/webpack-sources/download/webpack-sources-1.4.3.tgz#eedd8ec0b928fbf1cbfe994e22d2d890f330a933"
   integrity sha1-7t2OwLko+/HL/plOItLYkPMwqTM=
   dependencies:
     source-list-map "^2.0.0"
@@ -5625,7 +5620,7 @@ webpack-sources@^1.1.0:
 
 webpack-sources@^2.1.1:
   version "2.3.1"
-  resolved "https://registry.nlark.com/webpack-sources/download/webpack-sources-2.3.1.tgz?cache=0&sync_timestamp=1627383692924&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwebpack-sources%2Fdownload%2Fwebpack-sources-2.3.1.tgz#570de0af163949fe272233c2cefe1b56f74511fd"
+  resolved "https://registry.nlark.com/webpack-sources/download/webpack-sources-2.3.1.tgz#570de0af163949fe272233c2cefe1b56f74511fd"
   integrity sha1-Vw3grxY5Sf4nIjPCzv4bVvdFEf0=
   dependencies:
     source-list-map "^2.0.1"

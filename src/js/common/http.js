@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://139.9.177.51:8099'
+const BASE_URL = 'http://139.9.177.51:8099';
 
 function objToString(data) {
   let str = '';
@@ -34,7 +34,6 @@ const $http = {
   },
   post: function (url, data, callback) {
     let xhr = new XMLHttpRequest();
-    console.log(BASE_URL + url);
     xhr.open('post', BASE_URL + url);
     xhr.setRequestHeader('content-type', 'application/json');
     xhr.onreadystatechange = function () {

@@ -19,10 +19,10 @@ module.exports = {
   //入口===程序主模块
   entry: {
     //公共模块
-    commonCSS: './src/js/common-js/common-CSS.js',
-    dom: './src/js/common-js/dom.js',
-    http: './src/js/common-js/http.js',
-    utils: './src/js/common-js/utils.js',
+    commonCSS: './src/js/common.js',
+    dom: './src/js/common/dom.js',
+    http: './src/js/common/http.js',
+    utils: './src/js/common/utils.js',
     // 三方插件模块
     captcha: './src/lib/captcha/captcha-mini.js',
     swiper: './src/lib/swiper/swiper-bundle.js',
@@ -31,7 +31,9 @@ module.exports = {
     home: './src/js/home.js',
     login: './src/js/login.js',
     register: './src/js/register.js',
-    advertisement: './src/js/advertisement.js'
+    advertisement: './src/js/advertisement.js',
+    sports: './src/js/sports.js',
+    about: './src/js/about.js',
   },  //相对路径引入main.js 
   //出口===最终生成的文件放的位置
   output: {
@@ -100,7 +102,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/page/home.html',    //哪个页面需要打包 相对路径
       filename: 'home.html',
-      chunks: ['home', 'commonCSS', 'dom', 'swiper']   // 当前页面打包之后 绑定哪个js模块
+      chunks: ['home', 'commonCSS', 'dom', 'swiper', 'http', 'utils']   // 当前页面打包之后 绑定哪个js模块
     }),
     new HtmlWebpackPlugin({
       template: './src/page/login.html',    //哪个页面需要打包 相对路径
@@ -116,6 +118,16 @@ module.exports = {
       template: './src/page/advertisement.html',    //哪个页面需要打包 相对路径
       filename: 'advertisement.html',
       chunks: ['advertisement', 'commonCSS', 'dom']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/page/sports.html',    //哪个页面需要打包 相对路径
+      filename: 'sports.html',
+      chunks: ['sports', 'commonCSS', 'dom', 'utils']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/page/about.html',    //哪个页面需要打包 相对路径
+      filename: 'about.html',
+      chunks: ['about', 'commonCSS', 'dom', 'utils']
     }),
 
 

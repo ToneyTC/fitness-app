@@ -7,6 +7,12 @@
 .dpnone { display: none; }
 .flex1 { flex: 1 }
 
+.flexCol{flex-direction: column;}
+
+.jscon{
+  justify-content: space-around;
+}
+
 /* 盒模型 */
 .mt0 { margin-top: 0; }
 .mt8 { margin-top: 8px; }
@@ -27,3 +33,4 @@
 /* 字号 */
 .fs12 { font-size: 12px; }
 .fs18 { font-size: 18px; }
+
