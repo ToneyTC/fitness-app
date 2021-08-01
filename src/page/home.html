@@ -8,42 +8,80 @@
   <title>Document</title>
 </head>
 
-<body>
- <header>
-   <div class="top"></div>
- </header>
- <main>
-   <div class="bigBox">
-   <div class="today">
-    <span class="cup">今日排行</span>
-      <div class="cup3"></div>
-    <span class="cup1">9</span>
-   </div>
-   <div class="card"> 
-     <span class="date">积累打卡23天</span>
-     <div class="btn">今日打卡</div>
-   </div>
-  </div>
-  <div class="bigBox1">
-    <div class="jmData">
-      <span class="font-left">运动数据</span>
+<body class="dpflex flexCol">
+
+  <main class="flex1">
+    <div class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/course-img01.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/course-img02.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/course-img03.jpg" alt="">
+          </div>
+         
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+
+      </div>
     </div>
-    <div class="medal">
-      <span class="font-left">积累运动奖章</span>
+    <div class="content">
+      <div class="item dpflex mt20">
+        <div class="rank">
+          今日排名：
+          <span id="rankVal"> 0</span>
+        </div>
+        <div class="punch">
+          累计打卡天数
+          <span id="punchVal">0</span>
+          <button id="cardBtn">今日打卡</button>
+        </div>
+      </div>
+      <div class="item1 dpflex mt20 ">
+        <div class="sports flex1">
+          运动数据
+        </div>
+        <div class="sign flex1">
+          徽章3
+        </div>
+      </div>
+      <div class="item1 mt20">
+        课程训练
+      </div>
+      <div class="item1 mt20">
+        课程训练
+      </div>
     </div>
-  </div>
-  <div class="bigBox3">
-  <div class="longBox">
-    <span class="font-left">积累运动奖章</span>
-  </div>
-  <div class="longBox1">
-    <span class="font-left">积累运动奖章</span>
-  </div>
-</div>
- </main>
- <footer>
-  <div class="bigBox6"></div>
+  </main>
+
+  <footer class="dpflex jscon ">
+    <div class="footer-item ">
+      <p>
+        <i class="iconfont iconhome"></i>
+      </p>
+      <p>首页</p>
+    </div>
+    <div class="footer-item active">
+      <p>
+        <i class="iconfont iconsports"></i>
+      </p>
+      <p>运动</p>
+    </div>
+    <div class="footer-item">
+      <p>
+        <i class="iconfont iconmine"></i>
+      </p>
+      <p>我的</p>
+    </div>
   </footer>
+
+
 </body>
 
 </html>

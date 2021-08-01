@@ -18,21 +18,20 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   //入口===程序主模块
   entry: {
-    commoncss:'./src/js/common-js/common-CSS.js',
-    dom:'./src/js/common-js/dom.js',
-    http:'./src/js/common-js/http.js',
-    untils:'./src/js/common-js/utils.js',
+    //公共模块
+    commonCSS: './src/js/common-js/common-CSS.js',
+    dom: './src/js/common-js/dom.js',
+    http: './src/js/common-js/http.js',
+    utils: './src/js/common-js/utils.js',
     // 三方插件模块
     captcha: './src/lib/captcha/captcha-mini.js',
+    swiper: './src/lib/swiper/swiper-bundle.js',
+
     //私有模块
-    advertisement: './src/js/advertisement.js',
     home: './src/js/home.js',
     login: './src/js/login.js',
     register: './src/js/register.js',
-    
-    
-
-   
+    advertisement: './src/js/advertisement.js'
   },  //相对路径引入main.js 
   //出口===最终生成的文件放的位置
   output: {
@@ -83,7 +82,7 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.(svg|woff|ttf|woff2|eot|mp4|img)$/,
+        test: /\.(svg|woff|ttf|woff2|eot)$/,
         loader: 'file-loader',
         options: {
           outputPath: 'fonts'
@@ -101,24 +100,23 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/page/home.html',    //哪个页面需要打包 相对路径
       filename: 'home.html',
-      chunks: ['home','commoncss','dom']   // 当前页面打包之后 绑定哪个js模块
+      chunks: ['home', 'commonCSS', 'dom', 'swiper']   // 当前页面打包之后 绑定哪个js模块
     }),
     new HtmlWebpackPlugin({
       template: './src/page/login.html',    //哪个页面需要打包 相对路径
       filename: 'login.html',
-      chunks: ['login','commoncss','dom','http','untils']
+      chunks: ['login', 'commonCSS', 'dom', 'http', 'utils']
     }),
     new HtmlWebpackPlugin({
       template: './src/page/register.html',    //哪个页面需要打包 相对路径
       filename: 'register.html',
-      chunks: ['register','commoncss','dom', 'captcha','http','untils'],
+      chunks: ['register', 'commonCSS', 'dom', 'captcha', 'http', 'utils']
     }),
     new HtmlWebpackPlugin({
       template: './src/page/advertisement.html',    //哪个页面需要打包 相对路径
       filename: 'advertisement.html',
-      chunks: ['advertisement','commoncss','dom']
+      chunks: ['advertisement', 'commonCSS', 'dom']
     }),
-    
 
 
 
