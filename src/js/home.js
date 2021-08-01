@@ -19,6 +19,9 @@ document.ready(function () {
       el: '.swiper-pagination',
     },
   })
+
+
+
   //请求 首页默认数据
   //获取本地存储的数据
   let user = JSON.parse(localStorage.getItem('user'));
@@ -42,7 +45,9 @@ document.ready(function () {
     })
 
   }
+
   getData();
+
   //打卡功能实现
   cardBtn.addEventListener('click', function () {
     //调用打卡接口
@@ -54,4 +59,7 @@ document.ready(function () {
       }
     })
   })
+
+
+
 })
