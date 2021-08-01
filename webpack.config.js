@@ -26,6 +26,7 @@ module.exports = {
     // 三方插件模块
     captcha: './src/lib/captcha/captcha-mini.js',
     swiper: './src/lib/swiper/swiper-bundle.js',
+    weui:'./src/lib/weui',
 
     //私有模块
     home: './src/js/home.js',
@@ -127,7 +128,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/page/about.html',    //哪个页面需要打包 相对路径
       filename: 'about.html',
-      chunks: ['about', 'commonCSS', 'dom', 'utils']
+      chunks: ['about', 'commonCSS', 'dom', 'utils','http']
     }),
 
 
