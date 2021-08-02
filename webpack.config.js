@@ -26,7 +26,7 @@ module.exports = {
     // 三方插件模块
     captcha: './src/lib/captcha/captcha-mini.js',
     swiper: './src/lib/swiper/swiper-bundle.js',
-    weui:'./src/lib/weui',
+    weui:'./src/lib/weui/weui.js',
 
     //私有模块
     home: './src/js/home.js',
@@ -130,6 +130,11 @@ module.exports = {
       filename: 'about.html',
       chunks: ['about', 'commonCSS', 'dom', 'utils','http']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/page/edit.html',    //哪个页面需要打包 相对路径
+      filename: 'edit.html',
+      chunks: ['edit', 'commonCSS', 'dom', 'utils','http','weui']
+    }),
 
 
 
@@ -151,7 +156,7 @@ module.exports = {
     port: 8088,  // 端口  8080 80  8081 8082
     open: true, // 自动打开服务
     publicPath: '/', // 静态资源查找路径
-    openPage: 'home.html', // 打开的页面
+    openPage: 'edit.html', // 打开的页面
   },
   target: 'web', // 目标是浏览器
 

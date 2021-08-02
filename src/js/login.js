@@ -8,6 +8,7 @@ document.ready(function () {
   let accountInp = document.querySelector('#account');
   let passwordInp = document.querySelector('#password');
   let saveBtn = document.querySelector('.save-btn');
+  let click= document.querySelector('.click')
 
 
 
@@ -30,10 +31,14 @@ document.ready(function () {
       //登录接口
       $http.post('/users/login', data, function (res) {
         //登录成功
-        if (res.status == 0) {
+        if (res.status == 0 ) {
           //将数据存到本地存储
-
+          if(click.checked==true){
           localStorage.setItem('user', JSON.stringify(res.data.user));
+        }
+        if(click.checked==false){
+          sessionStorage.setItem('user', JSON.stringify(res.data.user));
+        }
           //跳转页面到首页
           utils.createToast(0, '登录成功');
 
@@ -48,6 +53,7 @@ document.ready(function () {
           utils.createToast(1, res.msg);
         }
 
+        
       })
     }
 
