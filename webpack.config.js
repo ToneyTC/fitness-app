@@ -35,6 +35,8 @@ module.exports = {
     advertisement: './src/js/advertisement.js',
     sports: './src/js/sports.js',
     about: './src/js/about.js',
+    edit:'./src/js/edit.js',
+    player:'./src/js/player.js'
   },  //相对路径引入main.js 
   //出口===最终生成的文件放的位置
   output: {
@@ -123,7 +125,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/page/sports.html',    //哪个页面需要打包 相对路径
       filename: 'sports.html',
-      chunks: ['sports', 'commonCSS', 'dom', 'utils']
+      chunks: ['sports', 'commonCSS', 'dom', 'utils','http']
     }),
     new HtmlWebpackPlugin({
       template: './src/page/about.html',    //哪个页面需要打包 相对路径
@@ -134,6 +136,11 @@ module.exports = {
       template: './src/page/edit.html',    //哪个页面需要打包 相对路径
       filename: 'edit.html',
       chunks: ['edit', 'commonCSS', 'dom', 'utils','http','weui']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/page/player.html',    //哪个页面需要打包 相对路径
+      filename: 'player.html',
+      chunks: ['player', 'commonCSS', 'dom']
     }),
 
 
