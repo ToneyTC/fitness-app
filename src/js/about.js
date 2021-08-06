@@ -12,6 +12,7 @@ document.ready(function () {
   let user = JSON.parse(localStorage.getItem('user'))
   let imgDom=document.querySelector('#userImg')
   let userImg=document.querySelector('.user')
+  let sports=document.querySelector('.sports-data')
   $http.get('/users/accountinfo', { userId: user.userId }, function (res) {
     if (res.status == 0) {
       userNameDom.textContent = res.data.nickname;
@@ -67,5 +68,7 @@ document.ready(function () {
     }
 
   })
-  
+  sports.addEventListener('click',function(){
+    location.href="./data.html"
+  })
 })

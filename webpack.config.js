@@ -36,7 +36,9 @@ module.exports = {
     sports: './src/js/sports.js',
     about: './src/js/about.js',
     edit:'./src/js/edit.js',
-    player:'./src/js/player.js'
+    player:'./src/js/player.js',
+    courseInfo:'./src/js/courseInfo.js',
+    data:'./src/js/data.js'
   },  //相对路径引入main.js 
   //出口===最终生成的文件放的位置
   output: {
@@ -142,6 +144,16 @@ module.exports = {
       filename: 'player.html',
       chunks: ['player', 'commonCSS', 'dom']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/page/courseInfo.html',    //哪个页面需要打包 相对路径
+      filename: 'courseInfo.html',
+      chunks: ['courseInfo', 'commonCSS', 'dom','http','utils']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/page/data.html',    //哪个页面需要打包 相对路径
+      filename: 'data.html',
+      chunks: ['data', 'commonCSS', 'dom','http']
+    }),
 
 
 
@@ -163,7 +175,7 @@ module.exports = {
     port: 8088,  // 端口  8080 80  8081 8082
     open: true, // 自动打开服务
     publicPath: '/', // 静态资源查找路径
-    openPage: 'edit.html', // 打开的页面
+    openPage: 'advertisement.html', // 打开的页面
   },
   target: 'web', // 目标是浏览器
 

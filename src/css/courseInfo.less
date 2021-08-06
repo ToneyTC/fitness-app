@@ -1,0 +1,163 @@
+// 视频播放框
+.showBox{
+    width: 100%;
+    height: 250px;
+    background: #ccc;
+    position: relative;
+    >img{
+        width: 100%;
+        height: 100%;
+    }
+    .back{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        i{
+            font-size: 30px;
+        }
+    }
+    .play{
+        width: 60px;
+        height: 60px;
+        // background: yellowgreen;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        i{
+            font-size: 36px;
+        }
+    }
+}
+// 内容
+.sh-wrap{
+    margin: auto;
+    margin-top: 25px;
+    width: 93%;
+    height: 100%;
+    flex: 1;
+    // background: pink;
+    overflow-y: scroll;
+}
+// 视频介绍
+.introductionTip{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #8A8A8A;
+    // background: yellowgreen;
+    div:last-child{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+// 文字介绍
+.introductionText{
+    .auther{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        // background: aqua;
+        align-items: center;
+        position: relative;
+        div:first-child{
+            width: 80px;
+            height: 80px;
+            background: url('../img/dog.jpg') no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        div:nth-child(2){
+            margin-left: 15px;
+        }
+        div:last-child{
+            width: 80px;
+            height: 35px;
+            background: #4294FF;
+            border-radius: 25px;
+            text-align: center;
+            line-height: 35px;
+            color: #fff;
+            position: absolute;
+            right: 0;
+        }
+    }
+    .text{
+        width: 100%;
+        // height: 50px;
+        overflow: hidden;
+        line-height: 20px;
+        // overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:2;
+        position: relative;
+        div{
+            color: #101010;
+            position: absolute;
+            right: 5px;
+            bottom: 10px;
+        }
+    }
+    .practice{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        margin: 20px 0;
+        color: #101010;
+        // background: coral;
+        div:first-child{
+            width: 50%;
+            height: 100%;
+            border-right: 1px dashed #ccc;
+            // background: #f2be45;
+            p{
+                margin-top: 10px;
+                text-indent: 1rem;
+                color: #8A8A8A;
+                font-size: 12px;
+            }
+        }
+        div:last-child{
+            width: 50%;
+            height: 100%;
+            padding-left: 27px;
+            // background: #34b4bd;
+            p{
+                margin-top: 10px;
+                text-indent: 1rem;
+                color: #8A8A8A;
+                font-size: 12px;                
+            }
+        }
+    }
+    .begin{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        button{
+            width: 90%;
+            height: 55px;
+            margin: auto;
+            background: #4294FF;
+            border-radius: 27px;
+            color: #fff;
+        }
+    }
+    
+}
+
